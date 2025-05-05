@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch y Mascotas</title>
+</head>
+<body>
+    <script>
+        var cantidad = prompt("¿Cuántas mascotas tienes? (0, 1, 2 o más)");
+
+        switch (cantidad) {
+            case "0":
+                document.write("Usted no tiene mascotas 😢<br>");
+                document.write('<img src="https://png.pngtree.com/png-clipart/20240619/original/pngtree-clipart-of-sad-emoji-png-image_15360706.png" width="100">');
+                break;
+
+            case "1":
+                var nombre = prompt("¿Cómo se llama tu mascota?");
+                document.write("Usted tiene una mascota y se llama " + nombre + " 🐶🐱<br>");
+                break;
+
+            case "2":
+                var nombre1 = prompt("¿Cómo se llama tu primera mascota?");
+                var nombre2 = prompt("¿Cómo se llama tu segunda mascota?");
+                document.write("Usted tiene 2 mascotas y se llaman " + nombre1 + " y " + nombre2 + " 🐾<br>");
+                break;
+
+            default:
+                document.write("Usted tiene más de 2 mascotas 🐕🐈🐇🐦<br>");
+                break;
+        }
+    </script>
+</body>
+</html>
